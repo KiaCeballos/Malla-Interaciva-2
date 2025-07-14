@@ -1,0 +1,50 @@
+body {
+  background: #ffe6f0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.column h2 {
+  margin-bottom: 10px;
+}
+
+button.course {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #f06292;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button.course:hover {
+  background: #ec407a;
+}
+
+button.course.locked {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+button.course.locked:hover {
+  background: #ccc;
+}
